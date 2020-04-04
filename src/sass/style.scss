@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
    
 }
 .container{
@@ -12,6 +13,7 @@ body{
     background-color: #F7F4FB;
     font-family: Montserrat;
     color: #3A364E;
+ 
     header{
         .preheader{
             padding: 0.5em 10%;
@@ -78,7 +80,7 @@ body{
                     border: none;
                     outline: none;
                     position: relative;
-                    left: 42%;
+                    left: 36%;
                     width: 30px;
                     height: 26px;
                     padding: 0;
@@ -86,6 +88,9 @@ body{
                     opacity: 0;
                     z-index: 9;
                   
+                }
+                .toggler:hover{
+                    cursor: pointer;
                 }
 
                 .toggler span {
@@ -276,7 +281,7 @@ body{
                 
                 padding-top: 2em;
                
-                font-size: 55px;
+                font-size: 45px;
                 font-weight: 400;
                 padding-bottom: 0.6em;
                 span{
@@ -306,7 +311,8 @@ body{
             }
             
             p{
-                font-size: 18px;
+                width: 80%;
+                font-size: 16px;
                 color: #9A9A9A;
                 line-height: 26px;
                 margin-bottom: 3em;
@@ -461,6 +467,7 @@ body{
 }
 
 .sponsors{
+    
     padding-top: 7em;
     background-color: white;
     .container{
@@ -1109,7 +1116,7 @@ footer{
                 align-items: center;
                 margin-right: 5px;
                 position: relative;
-                left: -5%;
+                left: -10%;
                 text-decoration: none;
                 img{
                     width: 18px;
@@ -1196,38 +1203,402 @@ footer{
                    font-size: 15px;
                }
            }
-       }
-       
-   }
-  
-}  
-
-@media screen and (max-width: 588px){
-
-    #nen-header{
-        .container{
+          
            
-            .content{
-                width: 50%;
-                h1{
-                    font-size: 20px;
+                .arrow-down{
+                    padding-top: 6em;
                 }
-                p{
-                    font-size: 10px;
-                }
+        }
+
+    }
+
+
+    
+    .digital{
+        .container1{
+            width: 80%;
+            margin: auto;
+            flex-direction: column;
+            .teksti-djathtas{
+                width: 90%;
+
             }
+        }
+        .circle{
+            top: 75%;
         }
         
     }
 
 
+    .creative{
 
+
+        .rrethi-hiri1, .rrethi-hiri2{
+                opacity: 0.4;
+                left: -5%;
+                width: 550px;
+                height: 550px;
+             
+        }
+        .rrethi-hiri2{
+            width: 550px;
+            height: 550px;
+            left: -40%;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            .nalt{
+                flex-direction: column;
+                .text-left{
+                   
+                    padding-bottom: 5em;
+                }
+            }
+            .posht{
+                flex-direction: column;
+                .text-left1{
+                    width: 70%;
+                    padding-bottom: 8em;
+                }
+                .bck{
+                    width: 300px;
+                    .rratht{
+                        margin-right: 0;
+                        left: 30%;
+                    }
+                }
+            }
+        }
+    }
+
+
+  
+   .brands{
+    margin: auto;
+    width: 90%;
+    
+    
+    .content{
+        align-items: center;
+        width: 500px;
+        position: relative;
+        top: 100px;
+        left: 0;
+       
+    }
+
+    .gallery{
+        position: relative;
+        top: 170px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-items: center !important;
+       
+        .shtylla2{
+            margin-top: 50px;
+            margin-left: 0%;
+            
+        }
+        div{
+            
+            position: relative;
+            width: 100%;
+            
+            //margin-bottom: 100px;
+            img{
+                width: 70%;
+                
+            }
+            .vija-gjelber{
+                    
+                top:  110%;
+                left: 0;
+            
+              
+            }
+            p{
+               
+                top: 110%;
+                left: 65px;
+               
+            }
+            h5{
+                font-size: 20px;
+                top: 120%;
+                left: 65px;
+               // width: 300px;
+                
+            }
+            
+
+        }
+    }
+  } 
+
+
+  .bck-burri{
+    .burri-kalter{
+        h5{
+            font-size: 15px;
+        }
+        h1{
+            font-size: 32px;
+        }
+    }
+}
+
+ .insights{
+      .container{
+          .content{
+              p{
+                width: 90%;
+              }
+              
+          }
+          .kartat{
+              width: 100%;
+              grid-template-columns: 1fr;
+              justify-items: center;
+              margin-right: 0;
+              .karta{
+                  width: 400px;
+                  .img{
+                      width: 100%;
+                  }
+              }
+          }
+          .viewall{
+              margin-left: 35%;
+              
+          }
+      }
+ }
+
+}  
+
+@media screen and (max-width: 732px){
+   header{
+       .container{
+           nav{
+               .toggler{
+                   left: 35%;
+               }
+           }
+       }
+   }
+
+  #nen-header{
+        .container{
+            background-size: 380px 420px;
+            height: 100%;
+            .links{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                a{
+                    padding-bottom: 1em;
+                   
+                }
+                .watch{
+                    margin-left: 0;
+                }
+
+            }
+            .arrow-down {
+                width: 30%;
+                padding-top: 3em;
+            }
+        }
+    }
+
+    .digital{
+        .container1{
+            .kartat{
+                grid-template-columns: 1fr;
+                align-items: center;
+                justify-items: center;
+                margin-left: 0;
+                .karta{
+                    width: 100%;
+                    p{
+                        width: 70%;
+                    }
+                }
+                  
+            }
+        }
+        
+    }
+
+    .sponsors{
+        width: 100%;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+               padding-left: 0;
+                padding-bottom: 2em;
+               
+            }
+        }
+        
+    }
+    .creative{
+        .container{
+            
+            .nalt{
+                .videoja{
+                    margin-left: -13%;
+                    left: 0;
+                    video{
+                       width: 480px;
+                       height: 300px;
+                    }
+                    .playpause{
+                        top: 100px;
+                        left: 200px;
+                    }
+                }
+            }
+            .posht{
+                .text-left1{
+                    width: 100%;
+                }
+
+                .bck{
+                
+                    margin-top: -100px;
+                    width: 500px;
+                    height: 500px;
+                    background-image: url("../img/Group\ 46.png");
+                    background-size: 500px 500px;
+                    background-repeat: no-repeat;
+                    
+               
+                    .rratht{
+                        top: 25%;
+                        left: 10%;
+                        
+                    }
+                }   
+
+
+
+
+            }
+
+        }
+    }
+    .brands{
+        .gallery{
+            div{
+                img{
+                    width: 100%;
+                   
+                }
+                .vija-gjelber{
+                    
+                    top: 390px;
+                    left: 0;
+                
+                  
+                }
+                p{
+                   
+                    top: 383px;
+                    left: 65px;
+                   
+                }
+                h5{
+                    font-size: 20px;
+                    top: 405px;
+                    left: 65px;
+                    width: 300px;
+                    
+                }
+            }
+        }
+    }
+
+   .bck-burri{
+       .burri-kalter{
+           h5{
+               font-size: 9px;
+           }
+           h1{
+               font-size: 22px;
+           }
+       }
+   }
+
+    .insights{
+        .container{
+            .kartat{
+                .karta{
+                    width: 300px;
+                }
+            }
+            .viewall{
+                margin-left: 28%;
+                
+            }
+        }
+    }
+
+    footer{
+        .footer1,.footer2{
+            background-size: 1200px;
+            background-position: right;
+            background-repeat: repeat;
+            .container{
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                &:first-child{
+                    padding-top: 70px;
+                }
+                div{
+                    padding: 20px  0;
+                  
+                    h3{
+                        padding: 10px;
+                    }
+                }
+                .offices{
+                    div{
+                        justify-content: center;
+                    }
+                   
+                }
+            }
+          
+        }
+       
+    }
 
 }
 
 
 
 @media screen and (max-width: 588px){
+
+    header{
+        .container{
+
+           
+            nav{
+                .toggler.open{
+                    transform: translateY(-120px);
+                }
+
+            }
+        }
+    }
+    
+   
     .preheader{
         align-items: center;
         flex-direction: column !important;
@@ -1248,5 +1619,32 @@ footer{
             }
         }
     }
+    #nen-header{
+        .container{
+            background-size: 350px 420px;
+            height: 60vh;
+            .content{
+                width: 50%;
+                h1{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 10px;
+                }
+                padding-bottom: 2em;
+            }
+            .arrow-down {
+                padding-top: 0;
+                img{
+                    width: 30px;
+                    height: 30px;
+                  
+                }
+              
+            }
+        }
+        
+    }
+
 
 }    

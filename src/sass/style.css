@@ -98,13 +98,17 @@ body header .container nav .toggler {
   border: none;
   outline: none;
   position: relative;
-  left: 42%;
+  left: 36%;
   width: 30px;
   height: 26px;
   padding: 0;
   background: transparent;
   opacity: 0;
   z-index: 9;
+}
+
+body header .container nav .toggler:hover {
+  cursor: pointer;
 }
 
 body header .container nav .toggler span {
@@ -322,7 +326,7 @@ body header .container nav .nav-links .nav-2 .contact-us {
 
 #nen-header .container .content h1 {
   padding-top: 2em;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 400;
   padding-bottom: 0.6em;
 }
@@ -344,7 +348,8 @@ body header .container nav .nav-links .nav-2 .contact-us {
 }
 
 #nen-header .container .content p {
-  font-size: 18px;
+  width: 80%;
+  font-size: 16px;
   color: #9A9A9A;
   line-height: 26px;
   margin-bottom: 3em;
@@ -1196,7 +1201,7 @@ footer .footer2 .container p {
             align-items: center;
     margin-right: 5px;
     position: relative;
-    left: -5%;
+    left: -10%;
     text-decoration: none;
   }
   header .container nav #zilja-res img {
@@ -1287,21 +1292,293 @@ footer .footer2 .container p {
   #nen-header .container .content p {
     font-size: 15px;
   }
-}
-
-@media screen and (max-width: 588px) {
-  #nen-header .container .content {
-    width: 50%;
+  #nen-header .container .arrow-down {
+    padding-top: 6em;
   }
-  #nen-header .container .content h1 {
+  .digital .container1 {
+    width: 80%;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .digital .container1 .teksti-djathtas {
+    width: 90%;
+  }
+  .digital .circle {
+    top: 75%;
+  }
+  .creative .rrethi-hiri1, .creative .rrethi-hiri2 {
+    opacity: 0.4;
+    left: -5%;
+    width: 550px;
+    height: 550px;
+  }
+  .creative .rrethi-hiri2 {
+    width: 550px;
+    height: 550px;
+    left: -40%;
+  }
+  .creative .container {
+    width: 80%;
+    margin: auto;
+  }
+  .creative .container .nalt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .creative .container .nalt .text-left {
+    padding-bottom: 5em;
+  }
+  .creative .container .posht {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .creative .container .posht .text-left1 {
+    width: 70%;
+    padding-bottom: 8em;
+  }
+  .creative .container .posht .bck {
+    width: 300px;
+  }
+  .creative .container .posht .bck .rratht {
+    margin-right: 0;
+    left: 30%;
+  }
+  .brands {
+    margin: auto;
+    width: 90%;
+  }
+  .brands .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 500px;
+    position: relative;
+    top: 100px;
+    left: 0;
+  }
+  .brands .gallery {
+    position: relative;
+    top: 170px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center !important;
+  }
+  .brands .gallery .shtylla2 {
+    margin-top: 50px;
+    margin-left: 0%;
+  }
+  .brands .gallery div {
+    position: relative;
+    width: 100%;
+  }
+  .brands .gallery div img {
+    width: 70%;
+  }
+  .brands .gallery div .vija-gjelber {
+    top: 110%;
+    left: 0;
+  }
+  .brands .gallery div p {
+    top: 110%;
+    left: 65px;
+  }
+  .brands .gallery div h5 {
     font-size: 20px;
+    top: 120%;
+    left: 65px;
   }
-  #nen-header .container .content p {
-    font-size: 10px;
+  .bck-burri .burri-kalter h5 {
+    font-size: 15px;
+  }
+  .bck-burri .burri-kalter h1 {
+    font-size: 32px;
+  }
+  .insights .container .content p {
+    width: 90%;
+  }
+  .insights .container .kartat {
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    margin-right: 0;
+  }
+  .insights .container .kartat .karta {
+    width: 400px;
+  }
+  .insights .container .kartat .karta .img {
+    width: 100%;
+  }
+  .insights .container .viewall {
+    margin-left: 35%;
+  }
+}
+
+@media screen and (max-width: 732px) {
+  header .container nav .toggler {
+    left: 35%;
+  }
+  #nen-header .container {
+    background-size: 380px 420px;
+    height: 100%;
+  }
+  #nen-header .container .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #nen-header .container .links a {
+    padding-bottom: 1em;
+  }
+  #nen-header .container .links .watch {
+    margin-left: 0;
+  }
+  #nen-header .container .arrow-down {
+    width: 30%;
+    padding-top: 3em;
+  }
+  .digital .container1 .kartat {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    margin-left: 0;
+  }
+  .digital .container1 .kartat .karta {
+    width: 100%;
+  }
+  .digital .container1 .kartat .karta p {
+    width: 70%;
+  }
+  .sponsors {
+    width: 100%;
+  }
+  .sponsors .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sponsors .container img {
+    padding-left: 0;
+    padding-bottom: 2em;
+  }
+  .creative .container .nalt .videoja {
+    margin-left: -13%;
+    left: 0;
+  }
+  .creative .container .nalt .videoja video {
+    width: 480px;
+    height: 300px;
+  }
+  .creative .container .nalt .videoja .playpause {
+    top: 100px;
+    left: 200px;
+  }
+  .creative .container .posht .text-left1 {
+    width: 100%;
+  }
+  .creative .container .posht .bck {
+    margin-top: -100px;
+    width: 500px;
+    height: 500px;
+    background-image: url("../img/Group 46.png");
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+  }
+  .creative .container .posht .bck .rratht {
+    top: 25%;
+    left: 10%;
+  }
+  .brands .gallery div img {
+    width: 100%;
+  }
+  .brands .gallery div .vija-gjelber {
+    top: 390px;
+    left: 0;
+  }
+  .brands .gallery div p {
+    top: 383px;
+    left: 65px;
+  }
+  .brands .gallery div h5 {
+    font-size: 20px;
+    top: 405px;
+    left: 65px;
+    width: 300px;
+  }
+  .bck-burri .burri-kalter h5 {
+    font-size: 9px;
+  }
+  .bck-burri .burri-kalter h1 {
+    font-size: 22px;
+  }
+  .insights .container .kartat .karta {
+    width: 300px;
+  }
+  .insights .container .viewall {
+    margin-left: 28%;
+  }
+  footer .footer1, footer .footer2 {
+    background-size: 1200px;
+    background-position: right;
+    background-repeat: repeat;
+  }
+  footer .footer1 .container, footer .footer2 .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  footer .footer1 .container:first-child, footer .footer2 .container:first-child {
+    padding-top: 70px;
+  }
+  footer .footer1 .container div, footer .footer2 .container div {
+    padding: 20px  0;
+  }
+  footer .footer1 .container div h3, footer .footer2 .container div h3 {
+    padding: 10px;
+  }
+  footer .footer1 .container .offices div, footer .footer2 .container .offices div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media screen and (max-width: 588px) {
+  header .container nav .toggler.open {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
   .preheader {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1330,6 +1607,27 @@ footer .footer2 .container p {
   .preheader .social-links a {
     border: 1px solid #686868 !important;
     padding: 0.5em !important;
+  }
+  #nen-header .container {
+    background-size: 350px 420px;
+    height: 60vh;
+  }
+  #nen-header .container .content {
+    width: 50%;
+    padding-bottom: 2em;
+  }
+  #nen-header .container .content h1 {
+    font-size: 20px;
+  }
+  #nen-header .container .content p {
+    font-size: 10px;
+  }
+  #nen-header .container .arrow-down {
+    padding-top: 0;
+  }
+  #nen-header .container .arrow-down img {
+    width: 30px;
+    height: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
