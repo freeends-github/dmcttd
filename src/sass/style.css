@@ -1355,10 +1355,7 @@ footer .footer2 .container p {
     width: 90%;
   }
   .brands .content {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 500px;
+    width: 430px;
     position: relative;
     top: 100px;
     left: 0;
@@ -1370,31 +1367,13 @@ footer .footer2 .container p {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    justify-items: center !important;
   }
   .brands .gallery .shtylla2 {
-    margin-top: 50px;
-    margin-left: 0%;
+    margin-top: 0px;
+    margin-left: 20%;
   }
-  .brands .gallery div {
-    position: relative;
-    width: 100%;
-  }
-  .brands .gallery div img {
-    width: 70%;
-  }
-  .brands .gallery div .vija-gjelber {
-    top: 110%;
-    left: 0;
-  }
-  .brands .gallery div p {
-    top: 110%;
-    left: 65px;
-  }
-  .brands .gallery div h5 {
-    font-size: 20px;
-    top: 120%;
-    left: 65px;
+  .brands .gallery .flow {
+    margin-top: 0px;
   }
   .bck-burri .burri-kalter h5 {
     font-size: 15px;
@@ -1514,22 +1493,29 @@ footer .footer2 .container p {
     top: 25%;
     left: 10%;
   }
+  .brands .gallery div {
+    margin-bottom: 150px;
+  }
   .brands .gallery div img {
-    width: 100%;
+    width: 400px;
   }
   .brands .gallery div .vija-gjelber {
-    top: 390px;
+    top: 300px;
     left: 0;
   }
   .brands .gallery div p {
-    top: 383px;
+    top: 293px;
     left: 65px;
   }
   .brands .gallery div h5 {
     font-size: 20px;
-    top: 405px;
+    top: 305px;
     left: 65px;
     width: 300px;
+  }
+  .brands .gallery .shtylla2 {
+    margin-left: 10%;
+    margin-top: 0;
   }
   .bck-burri .burri-kalter h5 {
     font-size: 9px;
@@ -1628,6 +1614,9 @@ footer .footer2 .container p {
   #nen-header .container .arrow-down img {
     width: 30px;
     height: 30px;
+  }
+  .brands .gallery div {
+    margin-bottom: 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */

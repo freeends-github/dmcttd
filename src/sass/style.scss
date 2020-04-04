@@ -1281,8 +1281,8 @@ footer{
     
     
     .content{
-        align-items: center;
-        width: 500px;
+      
+        width: 430px;
         position: relative;
         top: 100px;
         left: 0;
@@ -1294,46 +1294,50 @@ footer{
         top: 170px;
         display: grid;
         grid-template-columns: 1fr ;
-        justify-items: center !important;
+        //justify-items: center !important;
        
         .shtylla2{
-            margin-top: 50px;
-            margin-left: 0%;
+          
+            margin-top: 0px;
+            margin-left: 20%;
             
         }
-        div{
+        .flow{
+            margin-top: 0px;
+        }
+        // div{
             
-            position: relative;
-            width: 100%;
+        //     position: relative;
+        //     width: 100%;
             
-            //margin-bottom: 100px;
-            img{
-                width: 70%;
+        //     //margin-bottom: 100px;
+        //     img{
+        //       //  width: 70%;
                 
-            }
-            .vija-gjelber{
+        //     }
+        //     .vija-gjelber{
                     
-                top:  110%;
-                left: 0;
+        //         top:  110%;
+        //         left: 0;
             
               
-            }
-            p{
+        //     }
+        //     p{
                
-                top: 110%;
-                left: 65px;
+        //         top: 110%;
+        //         left: 65px;
                
-            }
-            h5{
-                font-size: 20px;
-                top: 120%;
-                left: 65px;
-               // width: 300px;
+        //     }
+        //     h5{
+        //         font-size: 20px;
+        //         top: 120%;
+        //         left: 65px;
+        //        // width: 300px;
                 
-            }
+        //     }
             
 
-        }
+        // }
     }
   } 
 
@@ -1453,6 +1457,7 @@ footer{
                 .videoja{
                     margin-left: -13%;
                     left: 0;
+                    //justify-items: center;
                     video{
                        width: 480px;
                        height: 300px;
@@ -1494,31 +1499,37 @@ footer{
     }
     .brands{
         .gallery{
+            
             div{
+                margin-bottom: 150px;
                 img{
-                    width: 100%;
+                    width: 400px;
                    
                 }
                 .vija-gjelber{
                     
-                    top: 390px;
+                    top: 300px;
                     left: 0;
                 
                   
                 }
                 p{
                    
-                    top: 383px;
+                    top: 293px;
                     left: 65px;
                    
                 }
                 h5{
                     font-size: 20px;
-                    top: 405px;
+                    top: 305px;
                     left: 65px;
                     width: 300px;
                     
                 }
+            }
+            .shtylla2{
+                margin-left: 10%;
+                margin-top: 0;              
             }
         }
     }
@@ -1647,4 +1658,22 @@ footer{
     }
 
 
-}    
+    .brands{
+        .gallery{
+            //justify-items: center !important;
+          // margin: auto  10%;
+            // .shtylla2{
+            //     margin-left: 5%;
+              
+            // }
+            div{
+                margin-bottom: 80px;
+            }
+            
+            
+            
+        }
+    }
+
+
+}
