@@ -29,7 +29,7 @@ body{
                     border: 1px solid #686868;
                     padding: 1.2em 0.7em;
                     padding-bottom: 1.1em;
-                    // border-bottom: none;
+                    border-bottom: none;
                     margin: 0;
                     font-family: Montserrat Alternates;
                 }
@@ -43,8 +43,13 @@ body{
                    padding: 0.6em 13px;
                    padding-bottom: 0.5em;
                    text-decoration: none;
+                   border-bottom: none;
                    img{
                        width: 16px;
+                       transition: transform 0.5s;
+                   }
+                   img:hover{
+                       transform: scale(1.5);
                    }
                }
                a:nth-child(2),a:nth-child(3){
