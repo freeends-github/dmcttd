@@ -1,0 +1,1718 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+$pink-color:#FF268B;
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    border:none;
+}
+button{
+    background:transparent;
+    outline:none;
+    border:none;
+    cursor:pointer;
+}
+.container{
+    width:70%;
+}
+.header-1_section{
+    border-bottom:1px solid #707070;
+    background-color:#F7F4FB;
+    .header-1_container{
+        margin:auto;
+        display:flex;
+        justify-content: space-between;
+        .first_list{
+            display:flex;
+            align-items:center;
+            justify-content: flex-start;
+            li{ 
+                border-left:1px solid #707070;
+                &:last-child{
+                    border-right:1px solid #707070;
+                }
+                a{
+                    display:inline-block;
+                    padding:13px 12px;
+                    font: 700 12px/23px Montserrat Alternates;
+                    letter-spacing: 1px;
+                    color: #686868;
+                    opacity: 1;
+                    &:hover,&:active{
+                        color:$pink-color;
+                    }
+                }
+            }
+        }
+        .media_list{
+            display:flex;
+            justify-content: flex-start;
+            li{
+                border-left:1px solid #707070;
+                &:last-child{
+                    border-right:1px solid #707070;
+                }
+                a{
+                    display:inline-block;
+                    padding:13px;
+                    color:#000;
+                    i{
+                        font-size:20px;
+                    }
+                    &:hover,&:active{
+                        color:$pink-color;
+                    }
+                }
+            }
+        }
+    }
+}
+.header-2_section{
+    background-color:#F7F4FB;
+    overflow:hidden;
+    padding-bottom:2px;
+    .header-2_container{
+        margin:60px auto 0 auto;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        .header-2_headline{
+            h1{
+                font: 700 21px/17px Montserrat;
+                letter-spacing: -1.05px;
+                color: #3A364E;
+                span{
+                    color:$pink-color;
+                }
+            }
+        }
+        .list_container{
+            display:flex;
+            align-items:center;
+            justify-content:flex-end;
+            .header-2_list{
+                display:flex;
+                align-items:center;
+                li{ 
+                    margin-left:30px;
+                    &:first-child{
+                        margin-left:0;
+                    }
+                    a{
+                        font: 700 15px/35px Montserrat Alternates;
+                        letter-spacing: 0px;
+                        color: #3A364E;
+                        opacity: 1;
+                        transition:all 0.2s ease;
+                        &:hover,&:active{
+                            color:$pink-color;
+                        }
+                    }
+                }
+            }
+            .contact_part{
+                display:flex;
+                margin-left:85px;
+                align-items:center;
+                justify-content: flex-end;
+                .bell{
+                    position:relative;
+                    a{
+                        color:#000;
+                    }
+                    .bell_number{
+                        position:absolute;
+                        top:0;
+                        right:0;
+                        transform:translate(50%,-50%);
+                        background-color:$pink-color;
+                        width:9px;
+                        height:9px;
+                        border-radius:50%;
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        h2{
+                            color:#fff;
+                            font-size:10px;
+                        }
+                    }
+                }
+                .search{
+                    margin-left:30px;
+                    .search_btn{
+                        width:16px;
+                        height:16px;
+                        border-radius:50%;
+                        border:1px solid $pink-color;
+                        position:relative;
+                        &::before{
+                            content:"";
+                            display:block;
+                            position:absolute;
+                            bottom: -6px;
+                            right: -2px;
+                            width: 1px;
+                            height: 8px;
+                            background-color:$pink-color;
+                            transform:rotate(-45deg);
+                        }
+                    }
+                }
+                .contact{
+                    margin-left:30px;
+                    background-color:$pink-color;
+                    border-radius:4px;
+                    transition:all .5s ease;
+                    border:1px solid $pink-color;
+                    a{
+                        display:inline-block;
+                        padding:15px 40px;
+                        font: 400 15px/12px Titillium Web;
+                        letter-spacing: 0px;
+                        color: #FFFFFF;
+                        opacity: 1;
+                    }
+                    &:hover,&:active{
+                        background-color:transparent;
+                        a{
+                            color:$pink-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.hero_section{
+    background-color:#F7F4FB;
+    overflow:hidden;
+    .hero_container{
+        margin:37px auto 22px auto;
+        display:flex;
+        align-items:center;
+        justify-content: flex-start;
+        position:relative;
+        h2{
+            display:none;
+        }
+        .hero_info{
+            width:65%;
+            margin-right:85px;
+            position:relative;
+            z-index:2;
+            h1{
+                font: 400 55px/60px Montserrat Alternates;
+                letter-spacing: 0px;
+                color: #3A364E;
+                opacity: 1;
+            }
+            p{  
+                margin-top:23px;
+                font: 400 18px/26px Montserrat;
+                letter-spacing: 0px;
+                color: #9A9A9A;
+                opacity: 1;
+            }
+            .hero_links{
+                margin-top:50px;
+                .first_link{
+                    font: 700 15px/65px Montserrat Alternates;
+                    letter-spacing: 0px;
+                    color: #3A364E;
+                    opacity: 1;
+                    margin-right:45px;
+                    position:relative;
+                    transition:all 0.5s ease-out;
+                    &::after{
+                        content:"";
+                        display:block;
+                        position:absolute;
+                        bottom:-4px;
+                        left:0;
+                        width:20px;
+                        height:2px;
+                        background-color:#707070;
+                        transition:all 0.5s ease-out;
+                    }
+                    &:hover,&:active{
+                        color:$pink-color;
+                    }
+                    &:hover::after,&:active::after{
+                        width:100%;
+                        background-color:$pink-color;
+                    }
+                }
+                .second_link{
+                    font: 700 15px/65px Montserrat Alternates;
+                    letter-spacing: 0px;
+                    color: #FF268B;
+                    opacity: 1;
+                    position:relative;
+                    span{
+                        margin-left:8px;
+                    }
+                    // &::after{
+                    //     content:"";
+                    //     display:block;
+                    //     position:absolute;
+                    //     bottom:-4px;
+                    //     left:0;
+                    //     width:0px;
+                    //     height:2px;
+                    //     transition:all 0.5s ease-out;
+                    // }
+                    // &:hover::after,&:active::after{
+                    //     width:100%;
+                    // }
+                }
+            }
+            .hero_down{
+                margin-top:100px;
+                height:40px;
+                a{  
+                    color:#000;
+                    i{
+                        font-size:25px;
+                        transition:all 0.3s ease;
+                    }
+                    &:hover,&:active{
+                        i{
+                            font-size:30px;
+                        }
+                    }
+                }
+            }
+        }
+        .hero_img{
+            // width:20%;
+            position:relative;
+            z-index:2;
+            img{
+                width:100%;
+            }
+        }
+        .hero_circle{
+            position:absolute;
+            right:0;
+        }
+    }
+}
+.creators_section{
+    overflow:hidden;
+    position:relative;
+    .creators_container{
+        margin:116px auto 106px auto;
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+        .creators_cards{
+            display:flex;
+            justify-content: flex-start;
+            align-items:center;
+            // width:43%;
+            // .creators_card1{
+            //     width:274px;
+            // }
+            .creators_card{
+                box-shadow: 1px 1px 40px #70707029;
+                border-radius: 23px;
+                opacity: 1;
+                padding:80px 40px 66px 40px;
+                position:relative;
+                width:274px;
+                z-index:2;
+                .card_img{
+                    display:flex;
+                    justify-content: center;
+                    align-items:center;
+                    background-color:$pink-color;
+                    width:64px;
+                    height:64px;
+                    border-radius:50%;
+                }
+                h2{ 
+                    margin-top:26px;
+                    font: 600 18px/20px Montserrat;
+                    letter-spacing: 0px;
+                    color: #3A364E;
+                    opacity: 1;
+                }
+                p{  
+                    margin-top:26px;
+                    font: 600 13px/20px Montserrat;
+                    letter-spacing: 0px;
+                    color: #95A1AC;
+                    opacity: 1;
+                }
+                .card_arrow{
+                    position:absolute;
+                    bottom:30px;
+                    right:25px;
+                    color:$pink-color;
+                    i{
+                        font-size:18px;
+                        transition:all 0.2s ease;
+                    }
+                    &:hover,&:active{
+                        i{
+                            font-size:21px;
+                        }
+                    }
+                }
+            }
+            .creators_card2-container{
+                // width:50%;
+                margin-left:25px;
+                .creators_card3{
+                    margin-top:22px;
+                }
+            }
+        }
+        .creators_info{
+            margin-left:100px;
+            width:32.5%;
+            h2{
+                font: 400 15px/65px Montserrat Alternates;
+                letter-spacing: 0px;
+                color: #FF268B;
+                opacity: 1;
+            }
+            h1{ 
+                margin-top:17px;
+                font: 300 43px/53px Montserrat Alternates;
+                letter-spacing: -0.86px;
+                color: #8E8E8E;
+                span{
+                    font: 700 43px/53px Montserrat Alternates;
+                    letter-spacing: -0.86px;
+                    color: #3A364E;
+                    display:block;
+                }
+            }
+            p{  
+                margin-top:36px;
+                font: 400 17px/27px Montserrat;
+                letter-spacing: 0px;
+                color: #95A1AC;
+                opacity: 1;
+                span{
+                    margin-top:20px;
+                    display:inline-block;
+                }
+            }
+        }
+    }
+    .first_circle{
+        position:absolute;
+        right:-25%;
+        top:20px;
+        width:45%;
+        z-index:-1;
+    }
+    .second_circle{
+        position:absolute;
+        transform:translateX(50%);
+        top:116px;
+        right:0%;
+        width:45%;
+        z-index:-1;
+    }
+}
+.partners_section{
+    overflow:hidden;
+    .partners_container{
+        width:48%;
+        margin:106px auto 0 auto;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+}
+.circle_container{
+    position:relative;
+    padding-bottom:20px;
+    .brand_img-background{
+        position:absolute;
+        bottom:0px;
+        right:25%;
+        z-index:-1;
+    }
+    .brand_img2-background{
+        position:absolute;
+        bottom: 19%;
+        right: 22%;
+        z-index:-1;
+    }
+    .first_circle{
+        position:absolute;
+        left:-43%;
+        top:-10%;
+        width:64%;
+        z-index:-1;
+    }
+    .second_circle{
+        position:absolute;
+        left:-10%;
+        top:-10%;
+        width:64%;
+        z-index:-1;
+    }
+}
+.studio_section{
+    overflow:hidden;
+    .studio_container{
+        margin:110px auto 0px auto;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        .studio_info{
+            width:33%;
+            .studio_line{
+                font: 400 15px/65px Montserrat Alternates;
+                letter-spacing: 0px;
+                color: #FF268B;
+                opacity: 1; 
+            }
+            h1{
+                span{
+                    display:block;
+                    font: 700 43px/60px Montserrat Alternates;
+                    letter-spacing: -2.67px;
+                    color: #3A364E;
+                }
+                font: 300 43px/60px Montserrat Alternates;
+                letter-spacing: -2.67px;
+                color: #9B9B9B;
+            }
+            .studio_items{
+                display:flex;
+                margin-top:45px;
+                .studio_item{
+                    h3{ 
+                        font: 500 45px/53px Montserrat;
+                        letter-spacing: 0px;
+                        color: #3A364E;
+                        span{
+                            color: #2D3BFF;
+                        }
+                    }
+                    h2{
+                        margin-top:15px;
+                        font: 700 17px/20px Montserrat;
+                        letter-spacing: 0px;
+                        color: #3A364E;
+                        opacity: 1;
+                    }
+                    p{  
+                        margin-top:9px;
+                        font: 400 17px/20px Montserrat;
+                        letter-spacing: 0px;
+                        color: #AEAEAE;
+                        opacity: 1;
+                    }
+                }
+                .studio_item2{
+                    margin-left:60px;
+                }
+            }
+        }
+        .studio_video{
+            width:736px;
+            width:54.5%;
+            height:439px;
+            background-color:rgba(149, 161, 172,.76);
+            position:relative;
+            display:flex;
+            justify-content:center;
+            align-items:flex-end;
+            .play_btn{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                cursor:pointer;
+            }
+        }
+    }
+}
+.brands_section{
+    overflow:hidden;
+    .brands_container{
+        margin:290px auto 165px auto;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        .brands_info{
+            width:470px;
+            margin-right:80px;
+            h2{
+                font: 400 15px/65px Montserrat Alternates;
+                letter-spacing: 0px;
+                color: #FF268B;
+                opacity: 1;
+            }
+            h1{
+                span{
+                    text-align: left;
+                    font: 400 43px/53px Montserrat;
+                    letter-spacing: -2.67px;
+                    color: #3A364E;
+                    display:block;
+                }
+                font: 300 43px/53px Montserrat Alternates;
+                letter-spacing: -2.67px;
+                color: #777777;
+            }
+            p{
+                margin-top:20px;
+                font: 500 15px/25px Montserrat Alternates;
+                letter-spacing: 0px;
+                color: #757575;
+                opacity: 1;
+            }
+            a{
+                font: 600 11px/13px Montserrat;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                opacity: 1;
+                padding:16px 28px;
+                display:inline-block;
+                background-color:$pink-color;
+                margin-top:23px;
+                border-radius:4px;
+                transition:all 0.3s ease;
+                border:1px solid $pink-color;
+                &:hover,&:active{
+                    background-color:transparent;
+                    color:$pink-color;
+                }
+            }
+        }
+        .brand_circle-container{
+            position:relative;
+            margin-right:18%;
+            .brand_circle{
+                width:132px;
+                height:132px;
+                box-shadow: 0px 3px 40px #00000029;
+                border-radius:50%;
+                background-color:#fff;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                span{
+                    display:block;
+                }
+            }
+            .brand_circle1{
+                position:absolute;
+                top:0%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                z-index:2;
+                h2{
+                    .first_span{
+                        font: 600 30px/30px Montserrat;
+                        letter-spacing: 0px;
+                        color: #FC215D;
+                        text-align:center;
+                    }
+                    .second_span{
+                        font: 500 17px/30px Montserrat;
+                        letter-spacing: 0px;
+                        color: #3A364E;
+                        text-align:center;
+                    }
+                }
+            }
+            .brand_circle2{
+                position:absolute;
+                top:50%;
+                right:0%;
+                transform:translate(50%,-50%);
+                z-index:2;
+                h2{
+                    .first_span{
+                        font: 600 30px/30px Montserrat;
+                        letter-spacing: 0px;
+                        color: #FF8B3D;
+                        text-align:center;
+                    }
+                    .second_span{
+                        font: 500 17px/30px Montserrat;
+                        letter-spacing: 0px;
+                        color: #3A364E;
+                        text-align:center;
+                    }
+                }
+            }
+            .brand_circle3{
+                position:absolute;
+                bottom:0%;
+                right:50%;
+                transform:translate(50%,50%);
+                z-index:2;
+                h2{
+                    .first_span{
+                        font: 600 30px/30px Montserrat;
+                        letter-spacing: 0px;
+                        color: #1AE3E4;
+                        text-align:center;
+                    }
+                    .second_span{
+                        text-align: center;
+                        font: 500 17px/30px Montserrat;
+                        letter-spacing: 0px;
+                        color: #3A364E;
+                        text-align:center;
+                    }
+                }
+            }
+            .brand_circle4{
+                position:absolute;
+                top:50%;
+                left:0%;
+                transform:translate(-50%,-50%);
+                z-index:2;
+                h2{
+                    .first_span{
+                        font: 600 30px/30px Montserrat;
+                        letter-spacing: 0px;
+                        color: #5837FF;
+                        text-align:center;
+                    }
+                    .second_span{
+                        font: 500 17px/30px Montserrat;
+                        letter-spacing: 0px;
+                        color: #3A364E;
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+}
+.digital_section{
+    overflow:hidden;
+    background-color:#F6F5F6;
+    .digital_container{
+        width:61%;
+        margin:155px auto 415px auto;
+        .digital_headline{
+            width:48%;
+            margin-left:auto;
+            h2{
+                text-align: left;
+                font: 400 15px/65px Montserrat;
+                letter-spacing: 0px;
+                color: #01ACD8;
+                opacity: 1;
+            }
+            h1{
+                span{
+                    font: 700 49px/58px Montserrat;
+                    letter-spacing: -0.98px;
+                    color: #3A364E;
+                    display:block;
+                }
+                text-align: left;
+                font: 300 49px/58px Montserrat Alternates;
+                letter-spacing: -0.98px;
+                color: #686868;
+            }
+        }
+        .digital_items-container{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap:37px;
+            grid-row-gap: 110px;
+            margin-top:37px;
+            .digital_img{
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+            .digital_info{
+                margin-top:33px;
+                position:relative;
+                .digital_line{
+                    background-color:#01D85F;
+                    width:62px;
+                    height:1px;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                }
+                h2{
+                    margin-left:92px;
+                    font: 500 14px/17px Montserrat;
+                    letter-spacing: -0.28px;
+                    color: #95A1AC;
+                    opacity: 1;
+                }
+                h1{
+                    margin-left:92px;
+                    margin-top:5px;
+                    font: 500 27px/32px Montserrat;
+                    letter-spacing: -0.54px;
+                    color: #3A364E;
+                    opacity: 1;
+                }
+            }
+            .digital_item2,.digital_item4{
+                transform:translateY(23%);
+            }
+        }
+    }
+}
+.started_section{
+    width:60%;
+    margin:auto;
+    background-image: url(../img/Services_Corporate_RS.png);
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:50px;
+    transform:translateY(-50%);
+    position:relative;
+    padding:96px 7%;
+    .started_container{ 
+        display:flex;
+        flex-flow:column;
+        justify-content:center;
+        align-items:center;
+        h2{
+            font: 400 15px/65px Montserrat Alternates;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+        h1{ 
+            margin-top:20px;
+            text-align: center;
+            font: 300 53px/63px Montserrat Alternates;
+            letter-spacing: -1.06px;
+            color: #DBDBDB;
+            span{
+                text-align: center;
+                font: 700 53px/63px Montserrat;
+                letter-spacing: -1.06px;
+                color: #FFFFFF;
+            }
+        }
+        button{
+            margin-top:26px;
+            font: 600 11px/13px Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            background-color:$pink-color;
+            padding:16px 50px;
+            border-radius:9px;
+            position:relative;
+            transition:all 0.3s ease-out;
+            border:1px solid $pink-color;
+            &:hover,&:active{
+                background-color:transparent;
+            }
+        }
+    }
+    &::before{
+        content:"";
+        display:block;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        border-radius:50px;
+        background-color:#019DD8;
+        opacity:0.75;
+        z-index:-1;
+    }
+}
+.news_section{
+    overflow:hidden;
+    position:relative;
+    margin-top:-240px;
+    .news_container{
+        margin:100px auto 50px auto;
+        .news_headline{
+            h2{
+                text-align:center;
+                font: 700 21px/38px Montserrat;
+                letter-spacing: 0px;
+                color: #019DD8;
+                opacity: 1;
+            }
+            h1{
+                span{
+                    font: 700 45px/54px Montserrat;
+                    letter-spacing: -0.9px;
+                    color: #3A364E;
+                }
+                text-align: center;
+                font: 300 45px/54px Montserrat Alternates;
+                letter-spacing: -0.9px;
+                color: #686868;
+            }
+            .news_headline-paragraph{
+                margin-top:80px;
+                width:45%;
+                p{
+                    font: 400 18px/30px Montserrat;
+                    letter-spacing: 0px;
+                    color: #95A1AC;
+                    opacity: 1;
+                }
+            }
+        }
+        .news_items{
+            margin-top:60px;
+            display:flex;
+            justify-content: space-between;
+            .news_card{
+                width:29.5%;
+                .news_img{
+                    width:100%;
+                    display:flex;
+                    img{
+                        width:100%;
+                    }
+                }
+                .news_info{
+                    box-shadow: 0px 3px 31px #00000029;
+                    padding:35px 17px 25px 30px;
+                    .news_date{
+                        display:flex;
+                        justify-content:space-between;
+                        width:80%;
+                        div{
+                            display:flex;
+                            align-items:center;
+                            p{
+                                margin-left:15px;
+                                font: 400 15px/19px Montserrat;
+                                letter-spacing: 0px;
+                                color: #000000;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .news_paragraph{
+                        p{  
+                            margin-top:40px;
+                            text-align: left;
+                            font: 600 17px/30px Montserrat;
+                            letter-spacing: 0px;
+                            color: #3A364E;
+                            opacity: 1;
+                        }
+                        .news_link{
+                            margin-top:15px;
+                            display:inline-block;
+                            font: 400 15px/19px Montserrat;
+                            letter-spacing: 0px;
+                            color: #256ECE;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .view_button-contianer{
+            display:flex;
+            justify-content:center;
+            margin-top:87px;
+            a{
+                text-align: center;
+                font: 500 12px/14px Montserrat;
+                letter-spacing: 0px;
+                color: #019DD8;
+                opacity: 1;
+                border:1px solid #019DD8;
+                padding:16px 45px;
+                border-radius:9px;
+                transition:background-color 0.3s ease, color 0.2s 0.1s ease;
+                &:hover,&:active{
+                    background-color:#019DD8;
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+.footer1{
+    background-color:#F6F5F6;
+    position:relative;
+    // margin-top:-240px;
+    overflow:hidden;
+    .footer1_container{
+        margin:120px auto 88px auto;
+        display:flex;
+        justify-content:space-between;
+        &>div{
+            z-index:2;
+            h2{
+                text-align: left;
+                font: 700 20px/24px Montserrat;
+                letter-spacing: 0px;
+                color: #3A364E;
+                opacity: 1;
+                margin-bottom:50px;
+                text-transform:capitalize;
+            }
+            ul {
+                li{
+                     a{
+                        font: 400 15px/30px Montserrat;
+                        letter-spacing: 0px;
+                        color: #7D7D7D;
+                        opacity: 1;
+                        &:hover,&:active{
+                            color:rgb(66, 66, 66);
+                        }
+                     }
+                }
+            }
+        }
+        .offices{
+            p{
+                font: 400 15px/19px Montserrat;
+                letter-spacing: 0px;
+                color: #3A364E;
+                opacity: 1;
+                span{
+                    display:block;
+                }
+            }
+            a{  
+                margin-top:12px;
+                display:block;
+                font: 700 15px/19px Montserrat;
+                letter-spacing: 0px;
+                color: #3A364E;
+                opacity: 1;
+                span{
+                    color:$pink-color;
+                    margin-right:10px;
+                    i{
+                        font-size:18px;
+                    }
+                }
+            }
+            .footer_media{
+                display:flex;
+                justify-content: flex-start;
+                margin-top:30px;
+                .media_item{
+                    width:30px;
+                    height:30px;
+                    background-color:$pink-color;
+                    border-radius:50%;
+                    margin-right:25px;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    a{
+                        color:#fff;
+                        margin-top:0;
+                    }
+                }
+            }
+        }
+    }
+    .footer_img1{
+        position:absolute;
+        left:5%;
+        top:20%;
+    }
+    .footer_img2{
+        position:absolute;
+        left:50%;
+        top:20%;
+    }
+    .footer_img3{
+        position:absolute;
+        right:-20%;
+        top:20%;
+    }
+}
+.footer2{
+    overflow:hidden;
+    .footer2_container{
+        margin:20px auto;
+        display:flex;
+        justify-content:space-between;
+        p{
+                font: 400 13px/23px Montserrat;
+                letter-spacing: 0px;
+                color: #95A1AC;
+                opacity: 1;
+        }
+        ul{
+            display:flex;
+            li{ 
+                padding:0 5px;
+                a{
+                    font: 400 13px/23px Montserrat;
+                    letter-spacing: 0px;
+                    color: #95A1AC;
+                    opacity: 1;
+                }
+                &:last-child{
+                    border-left:1px solid #95A1AC;
+                }
+            }
+        }
+    }
+}
+
+//responsive
+
+@media only screen and (max-width:1500px){
+    .container{
+        width:85%;
+    }
+    .header-2_section{
+        .header-2_container{
+            .list_container{
+                .contact_part{
+                    margin-left:50px;
+                }
+            }
+        }
+    }
+    .digital_section{
+        .digital_container{
+            width:70%;
+        }
+    }
+    .started_section{
+        width:70%;
+    }
+    .partners_section{
+        .partners_container{
+            width:70%;
+        }
+    }
+}
+@media only screen and (max-width:1100px){
+    .header-2_section{
+        .header-2_container{
+            flex-flow:column;
+            .list_container{
+                margin-top:20px;
+                .header-2_list{
+                    li {
+                        margin-left:18px;
+                        a{
+                            font: 700 14px/35px Montserrat Alternates;
+                        }
+                    }
+                }
+                .contact_part{
+                    margin-left:25px;
+                    .search{
+                        margin-left:20px;
+                    }
+                    .contact{
+                        margin-left:20px;
+                    }
+                }
+            }
+        }
+    }
+    .hero_section{
+        .hero_container{
+            .hero_info{
+                h1{
+                    font: 400 45px/50px Montserrat Alternates;
+                }
+            }
+        }
+    }
+    .creators_section{
+        .creators_container{
+            flex-flow:column-reverse;
+            .creators_info{
+                width:100%;
+                margin-left:0;
+            }
+            .creators_cards{
+                margin-top:25px;
+                justify-content:space-between;
+                .creators_card1{
+                    width:31%;
+                }
+                .creators_card2-container{
+                    margin-left:0;
+                    display:flex;
+                    justify-content:space-between;
+                    width:65.29%;
+                    .creators_card2{
+                        width:47.5%;
+                    }
+                    .creators_card3{
+                        margin-top:0;
+                        width:47.5%;
+                    }
+                }
+            }
+        }
+    }
+    .circle_container{
+        .first_circle,.second_circle{
+            top:0;
+        }
+    }
+    .studio_section{
+        .studio_container{
+            flex-flow:column;
+            .studio_info{
+                width:100%;
+            }
+            .studio_video{
+                width:100%;
+                margin-top:30px;
+            }
+        }
+    }
+    .brands_section{
+        .brands_container{
+            margin:130px auto;
+            flex-flow:column;
+            .brands_info{
+                width:100%;
+                margin-right:0;
+            }
+            .brand_circle-container{
+                margin-top:85px;
+                margin-right:0;
+            }
+
+        }
+    }
+    .digital_section{
+        .digital_container{
+            .digital_headline{
+                width:100%;
+            }
+        }
+    }
+    .started_section{
+        width:85%;
+        padding:50px 7%;
+        .started_container{
+            h1{
+                font: 300 40px/58px Montserrat Alternates;
+                span{
+                    font: 700 40px/58px Montserrat;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:870px){
+    .container{
+        width:90%;
+    }
+    .partners_section{
+        .partners_container{
+            width:90%;
+            a{
+                img{
+                    width:100%;
+                }
+            }
+            .partner1{
+                width:10%;
+            }
+            .partner2{
+                width:18%;
+            }
+            .partner3{
+                width:15%;
+            }
+            .partner4{
+                width:15%;
+            }
+        }
+    }
+    .studio_section{
+        .studio_container{
+            .studio_video{
+                width:100%;
+                margin: 30px auto 0 auto;
+                .girl_img{
+                    width:38%;
+                }
+            }
+        }
+    }
+    .digital_section{
+        .digital_container{
+            .digital_headline{
+                h2{
+                    text-align:center;
+                }
+                h1{
+                    text-align: center;
+                    font: 300 40px/50px Montserrat Alternates;
+                    span{
+                        font: 700 40px/50px Montserrat;
+                    }
+                }
+            }
+            .digital_items-container{
+                grid-template-columns:1fr;
+                .digital_item2,.digital_item4{
+                    transform:translateY(0);
+                }
+            }
+        }
+    }
+    .news_section{
+        .news_container{
+            .news_headline{
+                h2{
+                    font: 700 18px/32px Montserrat;
+                }
+                h1{
+                    font: 300 38px/50px Montserrat Alternates;
+                    span{
+                        font:700 38px/50px Montserrat;
+                    }
+                }
+                .news_headline-paragraph{
+                        width:90%;
+                        margin-top:50px;
+                        p{
+                            font: 400 15px/24px Montserrat;
+                        }
+                }
+            }
+        }
+    }
+    .footer1{
+        .footer1_container{
+            flex-flow:column;
+            align-items:center;
+            justify-content:flex-start;
+            .offices{
+                margin-top:0;
+                .footer_media{
+                    justify-content:center;
+                    .media_item:last-child{
+                        margin-right:0;
+                    }
+                }
+            }
+            &>div{
+                margin-top:50px;
+                text-align:center;
+                h2{
+                    text-align:center;
+                    margin-bottom:20px;
+                }
+                ul{
+                    li{
+                        text-align:center;
+                    }
+                }
+            }
+        }
+        .footer_img1{
+            top:10px;
+            left:50%;
+            transform:translateX(-50%);
+        }
+        .footer_img2{
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        .footer_img3{
+            top:unset;
+            bottom:10px;
+            left:50%;
+            transform:translateX(-50%);
+        }
+    }
+}
+@media only screen and (max-width:770px){
+    .header-1_section{
+        .header-1_container{
+            .first_list{
+                li{
+                    a{
+                        padding: 11px 8px;
+                        font: 700 10px/23px Montserrat Alternates;
+                    }
+                }
+            }
+            .media_list{
+                li{
+                    a{  
+                        padding:10px;
+                        i{
+                            font-size:15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-2_section{
+        .header-2_container{
+            .list_container{
+                width:100%;
+                justify-content:flex-end;
+                .header-2_list{
+                    display:none;
+                }
+            }
+        }
+    }
+    .hero_section{
+        .hero_container{
+            padding-top:100px;
+            h2{   
+                display:block;
+                position:absolute;
+                top:0;
+                left:0;
+                font: 400 30px/40px Montserrat Alternates;
+                text-align:center;
+                color: #3A364E;
+                opacity: 1;
+            }
+            .hero_info{
+                margin-right:0;
+                width:100%;
+                h1{
+                    display:none;
+                }
+                p{
+                    font: 400 16px/26px Montserrat;
+                }
+                .hero_links{
+                    margin-top:30px;
+                    .first_link{
+                        margin-right:25px;
+                        font: 700 13px/65px Montserrat Alternates;
+                    }
+                    .second_link{
+                        font: 700 13px/65px Montserrat Alternates;
+                    }
+                }
+            }
+            .hero_circle{
+                width:50%;
+            }
+        }
+    }
+    .creators_section{
+        .creators_container{
+            .creators_cards{
+                flex-flow:column;
+                align-items:center;
+                justify-content:flex-start;
+                .creators_card{
+                    width:98%;
+                    max-width:274px;
+                }
+                .creators_card2-container{
+                    flex-flow:column;
+                    align-items:center;
+                    justify-content:flex-start;
+                    width:100%;
+                    .creators_card{
+                        width:98%;
+                        max-width:274px;
+                        margin-top:20px;
+                    }
+                }
+            }
+        }
+    }
+    .circle_container{
+        .brand_img-background{
+            bottom: 10px;
+            right: 5%;
+            width: 65%;
+        }
+    }
+    .digital_section{
+        .digital_container{
+            width:90%;
+        }
+    }
+    .started_section{
+        width:90%;
+    }
+    .news_section{
+        .news_container{
+            .news_items{
+                flex-flow:column;
+                align-items:center;
+                justify-content:flex-start;
+                .news_card{
+                    width:90%;
+                    max-width:370px;
+                    margin-bottom:30px;
+                    &:last-child{
+                        margin-bottom:0;
+                    }
+                }
+            }
+        }
+    }
+    .footer2{
+        .footer2_container{
+            flex-flow:column;
+            align-items:center;
+            justify-content:flex-start;
+            p{
+                text-align:center;
+            }
+            ul{
+                margin-top:20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .header-1_section{
+        .header-1_container{
+            flex-flow:column;
+            align-items:stretch;
+            justify-content:flex-start;
+            .first_list{
+                border-bottom:1px solid #707070;
+                justify-content:space-between;
+            }
+            .media_list{
+                justify-content:space-between;
+                li{
+                    width:25%;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                }
+            }
+        }
+    }
+    .header-2_section{
+        .header-2_container{
+            .list_container{
+                .contact_part{
+                    .contact{
+                        a{
+                            padding: 13px 25px;
+                            font: 400 13px/9px Titillium Web;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hero_section{
+        .hero_container{
+            flex-flow:column-reverse;
+            align-items:center;
+            justify-content:flex-start;
+            .hero_img{
+                width:35%;
+            }
+            .hero_info{
+                .hero_down{
+                    margin-top:50px;
+                }
+            }
+        }
+    }
+    .creators_section{
+        .creators_container{
+            .creators_info{
+                h2{
+                    font: 400 13px/22px Montserrat Alternates;
+                    text-align:center;
+                }
+                h1{
+                    font: 300 28px/35px Montserrat Alternates;
+                    text-align:center;
+                    span{
+                       font:700 28px/35px Montserrat Alternates;
+                       display:inline;
+                    }
+                }
+                p{
+                    font: 400 14px/24px Montserrat;
+                }
+            }
+        }
+    }
+    .partners_section{
+        .partners_container{
+            margin-top:20px;
+            flex-flow:column;
+            align-items:center;
+            justify-content:flex-start;
+            a{
+                margin-bottom:50px;
+            }
+            .partner1{
+                width:18%;
+            }
+            .partner2{
+                width:33%;
+            }
+            .partner3{
+                width:30%;
+            }
+            .partner4{
+                width:30%;
+                margin-bottom:0;
+            }
+        }
+    }
+    .studio_section{
+        .studio_container{
+                .studio_info{
+                    .studio_line{
+                        font: 400 13px/22px Montserrat Alternates;
+                        text-align:center;
+                    }
+                    h1{
+                        margin-top:20px;
+                        font: 300 28px/35px Montserrat Alternates;
+                        text-align:center;
+                        span{
+                           font:700 28px/35px Montserrat Alternates;
+                           display:inline;
+                        }
+                    }
+                    .studio_items{
+                        .studio_item{
+                            h3{
+                                font: 500 35px/40px Montserrat;
+                                text-align:center;
+                            }
+                            h2{
+                                text-align:center;
+                            }
+                            p{
+                                font: 400 14px/19px Montserrat;
+                                text-align:center;
+                            }
+                        }
+                        .studio_item2{
+                            margin-left:30px;
+                        }
+                    }
+                }
+                .studio_video{
+                    height:300px;
+                    .play_btn{
+                        width:70px;
+                        height:70px;
+                    }
+                }
+        }
+    }
+    .brands_section{
+        .brands_container{
+            margin:80px auto 30px auto;;
+            .brands_info{
+                h2{
+                    font: 400 13px/22px Montserrat Alternates;
+                    text-align:center;
+                }
+                h1{
+                    margin-top:20px;
+                    font: 300 28px/35px Montserrat Alternates;
+                    text-align:center;
+                    span{
+                       font:700 28px/35px Montserrat Alternates;
+                       display:inline;
+                    }
+                }
+                p{
+                    font: 500 13px/21px Montserrat Alternates;
+                }
+            }
+            .brand_circle-container{
+                margin-top:50px;
+                img{
+                    display:none;
+                }
+                .brand_circle{
+                    width:100px;
+                    height:100px;
+                    position:relative;
+                    top:0;
+                    bottom:0;
+                    right:0;
+                    left:0;
+                    transform:translate(0,0);
+                    margin-bottom:20px;
+                    h2{
+                        .first_span{
+                            font-size:25px;
+                        }
+                        .second_span{
+                            font-size:13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .digital_section{
+        .digital_container{
+            margin:50px auto 300px auto;
+            .digital_headline{
+                h2{
+                    font: 400 14px/24px Montserrat;
+                }
+                h1{ 
+                    margin-top:20px;
+                    font: 300 30px/35px Montserrat Alternates;
+                    text-align:center;
+                    span{
+                        font: 700 30px/35px Montserrat Alternates;
+                        display:inline;
+                    }
+                }
+            }
+            .digital_items-container{
+                grid-column-gap: 30px;
+                .digital_item{
+                    .digital_info{
+                        .digital_line{
+                            width:30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
